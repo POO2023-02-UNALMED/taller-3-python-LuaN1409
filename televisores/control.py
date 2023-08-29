@@ -2,7 +2,7 @@ class Control:
     
     def enlazar(self,tv):
         self.tv = tv
-        
+        tv.setControl(self)
     def turnOn(self):
         if self.tv is not None:
             self.tv.turnOn()
